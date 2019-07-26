@@ -29,6 +29,7 @@ module.exports = {
       options: {
         langKeyDefault: 'en',
         useLangKeyLayout: false,
+        prefixDefault: false,
       },
     },
     {
