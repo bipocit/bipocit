@@ -16,27 +16,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-plugin-intl`,
       options: {
-        extensions: [`.mdx`, `.md`],
-        defaultLayouts: {
-          default: require.resolve("./src/components/layout.js"),
-        },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false,
-        prefixDefault: false,
+        path: `${__dirname}/src/intl`,
+        languages: [`en`, `de`],
+        defaultLanguage: `en`,
+        redirect: true,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `bipocit`,
+        short_name: `bipocit`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -44,6 +36,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -1,0 +1,46 @@
+{
+  "lang": "en",
+  "title": "BIPOCIT",
+  "title_long": "BIPOCIT - Black, Indigenous && People of Color in Tech",
+  "description": "A description of the website",
+  "author": "@bipocit",
+
+  "nav_item_1": "Events",
+  "nav_item_2": "About",
+
+  "donate_button": "Donate",
+
+  "home_headline": "Centering Black, Indigenous && People of Color in Tech.",
+  "home_intro_copy": "BIPOCIT is an organization dedicated to creating safer spaces for those who are marginalized. We believe it is necessary to create a space that is inviting, supportive, and empowering for all Black, Indigenous, && People of Color in Tech (BIPOCIT). Our aim is to empower, uplift, and bring strong communities closer together through inspiration, communication, and access.",
+  "donate_cta": "Help us create new ways of connecting with BIPOCIT audiences.",
+
+  "events_title": "BIPOCIT - Upcoming & Past Events",
+  "past_events_label": "Past Events",
+  "past_events": [
+    {
+      "title": "CSSconf EU",
+      "date": "May 31st, 2019"
+    },
+    {
+      "title": "JSConf EU",
+      "date": "June 1-2, 2019"
+    }
+  ],
+
+  "donate_title": "BIPOCIT - Contribute to BIPOCIT",
+  "donate_copy": "Help us create new ways of connecting with BIPOCIT audiences.",
+
+  "about_title": "BIPOCIT - About Us",
+  "about_copy": "BIPOCIT is an organization dedicated to creating safer spaces for those who are marginalized. We believe it is necessary to create a space that is inviting, supportive, and empowering for all Black, Indigenous, && People of Color in Tech (BIPOCIT). Our aim is to empower, uplift, and bring strong communities closer together through inspiration, communication, and access.",
+
+  "404_title": "404: Page Not Found",
+  "404_message": "Not sure what you're looking for, but it ain't here.",
+
+  "organization_details_label": "BIPOCIT Collective",
+  "contact_label": "Say Hello",
+  "newsletter_label": "Newsletter",
+  "newsletter_cta": "Stay in the loop on news, upcoming events and more.",
+
+  "footer_impressum_label": "Impressum",
+  "footer_contact_label": "Contact"
+}
