@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Layout from "../components/layout";
 import SEO from "../components/seo"
-import { injectIntl, defineMessages } from "gatsby-plugin-intl";
+import { injectIntl } from "gatsby-plugin-intl";
 
 const Events = ({ intl }) => {
   return (
