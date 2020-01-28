@@ -1,7 +1,10 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
-    title: `BIPOCIT`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    name: `BIPOCIT`,
+    title: `BIPOCIT - Black, Indigenous, && People of Color in Tech`,
+    description: `Centering Black, Indigenous, && People of Color in Tech.`,
     author: `@bipocit`,
   },
   plugins: [
@@ -16,12 +19,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-intl`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        path: `${__dirname}/src/intl`,
-        languages: [`en`, `de`],
-        defaultLanguage: `en`,
-        redirect: true,
+        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
       },
     },
     {

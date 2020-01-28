@@ -1,24 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby-plugin-intl";
 
-const Navigation = ({ siteTitle }) => {
+const Navigation = ({ name }) => {
   return (
     <nav className="flex items-center justify-between flex-wrap p-4 lg:p-6">
       <div className="flex items-center">
-        <Link to="/" className="font-semibold no-underline text-black text-xl tracking-tight">{siteTitle}</Link>
+        <a href="/" className="font-semibold no-underline text-black text-xl tracking-tight">{name}</a>
       </div>
       <div className="flex items-center w-auto">
         <div className="text-sm lg:text-md">
-          <Link to="/about" className="inline-block no-underline text-black hover:text-black-800 mr-4">
+          <a href="/events" className="inline-block no-underline text-black hover:text-black-800 mr-4">
             Events
-          </Link>
-          <Link to="/events" className="inline-block no-underline text-black hover:text-black-800 mr-4">
+          </a>
+          <a href="/about" className="inline-block no-underline text-black hover:text-black-800 mr-4">
             About
-          </Link>
+          </a>
         </div>
         <div>
-          <Link to="/donate" className="inline-block no-underline text-sm lg:text-md px-4 py-2 leading-none border rounded text-white bg-black border-transparent hover:border-black hover:text-black hover:bg-white">Donate</Link>
+          <a href="/donate" className="inline-block no-underline text-sm lg:text-md px-4 py-2 leading-none border rounded text-white bg-black border-transparent hover:border-black hover:text-black hover:bg-white">Donate</a>
         </div>
       </div>
     </nav>
@@ -27,10 +26,7 @@ const Navigation = ({ siteTitle }) => {
 
 Navigation.propTypes = {
   siteTitle: PropTypes.string,
-}
-
-Navigation.defaultProps = {
-  siteTitle: `BIPOCIT`,
+  name: PropTypes.string,
 }
 
 export default Navigation
