@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       {children}
       </main>
       <footer className="p-4 lg:p-6">
-        © {new Date().getFullYear()}, {data.site.siteMetadata.name}
+        &copy; {new Date().getFullYear()}, {data.site.siteMetadata.name}
       </footer>
     </MDXProvider>
   )
