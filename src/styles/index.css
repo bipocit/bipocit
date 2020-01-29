@@ -1,9 +1,9 @@
 /* Base */
-@import "tailwindcss/base";
+@tailwind base;
 
 /* Components */
-@import "tailwindcss/components";
+@tailwind components
 @import "./components/clip-path";
 
 /* Utilities */
-@import "tailwindcss/utilities";
+@tailwind utilities;
