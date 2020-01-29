@@ -1,9 +1,11 @@
+/* Custom imports */
+@import "./components/clip-path";
+
 /* Base */
 @tailwind base;
 
 /* Components */
-@tailwind components
-@import "./components/clip-path";
+@tailwind components;
 
 /* Utilities */
 @tailwind utilities;
