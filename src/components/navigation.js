@@ -18,7 +18,7 @@ const Navigation = ({ name }) => {
           </Link>
         </div>
         <div>
-          <Link to="/donate" className="inline-block no-underline text-sm lg:text-md px-4 py-2 leading-none rounded text-purple-100 bg-purple-700 hover:bg-purple-800">Donate</Link>
+          <Link to="/support" className="inline-block no-underline text-sm lg:text-md px-4 py-2 leading-none rounded text-purple-100 bg-purple-700 hover:bg-purple-800">Support Us</Link>
         </div>
       </div>
     </nav>
