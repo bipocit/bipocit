@@ -24,8 +24,8 @@ const UL = ({ children }) => (
   <ul className="ml-8 my-4 text-lg md:text-xl">{children}</ul>
 )
 
-const A = ({ children, url }) => (
-  <a className="underline text-purple-200 hover:text-purple-300 transition-colors duration-150 ease-in-out cursor-pointer" href={url}>{children}</a>
+const A = ({ children, href }) => (
+  <a className="underline text-purple-200 hover:text-purple-300 transition-colors duration-150 ease-in-out cursor-pointer" href={href}>{children}</a>
 )
 
 export default {
