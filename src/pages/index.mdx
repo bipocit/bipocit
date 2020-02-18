@@ -1,12 +1,35 @@
 import SEO from "../components/seo";
 import Image from "../components/image";
+import { Flex, FlexContainer } from "../components/flex";
+import DonateButton from "../components/donate-button";
+
+
+<SEO title="BIPOCIT - Centering Black, Indigenous, && People of Color in Tech" />
+
+<FlexContainer direction="row">
+
+<Flex width="1/2">
+<div className="md:mr-6">
 
 # Centering Black, Indigenous, && People of Color in Tech.
 BIPOCIT is an organization dedicated to creating safer spaces for those who are marginalized. We believe it is necessary to create a space that is inviting, supportive, and empowering for all Black, Indigenous, && People of Color in Tech (BIPOCIT). Our aim is to empower, uplift, and bring strong communities closer together through inspiration, communication, and access.
 
+</div>
+</Flex>
+
+
+<Flex width="1/2">
 
 ## Help us create new ways of connecting with BIPOCIT audiences.
+
 <div className="mt-6">
-  <Link to="/support" className="inline-block no-underline text-sm lg:text-md px-4 py-2 leading-none rounded text-purple-100 bg-purple-700 hover:bg-purple-800">Support Us</Link>
+
+  <DonateButton/>
+
 </div>
+
 <Image/>
+
+</Flex>
+
+</FlexContainer>
