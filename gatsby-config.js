@@ -48,5 +48,8 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-csp`,
+    // the above includes the basic policy. read more here: https://www.gatsbyjs.org/packages/gatsby-plugin-csp/
+    // if you want to customize the security policy
   ],
 }
