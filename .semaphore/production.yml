@@ -7,7 +7,7 @@ blocks:
         - name: Deploy
           commands:
             - checkout
-            - npx now --token $ZEIT_TOKEN
+            - npx now --token $ZEIT_TOKEN --prod
       secrets:
         - name: now
       prologue:
