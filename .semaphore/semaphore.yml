@@ -24,7 +24,7 @@ blocks:
         - name: run tests
           commands:
             - npm test
-  - name: Builf
+  - name: Build
     task:
       jobs:
         - name: build css
