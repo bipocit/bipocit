@@ -1,0 +1,21 @@
+version: v1.0
+name: Parallel
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Workflow
+    task:
+      jobs:
+        - name: Setup
+          commands:
+            - npm install
+        - name: Run Test
+          commands:
+            - npm test
+        - name: Build
+          commands:
+            - npm run css
+      secrets:
+        - name: now
