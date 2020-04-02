@@ -10,6 +10,9 @@ blocks:
             - npx now --token $ZEIT_TOKEN -n bipocit --prod
       secrets:
         - name: now
+      prologue:
+        commands:
+          - sem-version node 10.13.0
 agent:
   machine:
     type: e1-standard-2
