@@ -11,7 +11,6 @@ blocks:
         - name: npm install and cache
           commands:
             - checkout
-            - cache restore
             - npm install
             - cache store
       prologue:
