@@ -1,5 +1,5 @@
 version: v1.0
-name: Pipeline
+name: Build Pipeline
 agent:
   machine:
     type: e1-standard-2
@@ -30,5 +30,12 @@ blocks:
         - name: build css
           commands:
             - npm run css
-      secrets:
-        - name: now
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+promotions:
+  - name: Production
+    pipeline_file: production.yml
+    auto_promote:
+      when: branch = 'master' AND result = 'passed'

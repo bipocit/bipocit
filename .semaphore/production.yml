@@ -1,0 +1,16 @@
+version: v1.0
+name: Deployment Pipeline
+blocks:
+  - name: Deployment Pipeline
+    task:
+      jobs:
+        - name: Deploy
+          commands:
+            - checkout
+            - npx now --token $ZEIT_TOKEN -n bipocit --prod
+      secrets:
+        - name: now
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
