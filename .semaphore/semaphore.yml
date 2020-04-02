@@ -1,20 +1,33 @@
 version: v1.0
-name: Parallel
+name: Pipeline
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Workflow
+  - name: Install dependencies
     task:
       jobs:
-        - name: Setup
+        - name: npm install and cache
           commands:
+            - checkout
+            - cache restore
             - npm install
-        - name: Run Test
+            - cache store
+  - name: Tests
+    task:
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+      jobs:
+        - name: run tests
           commands:
             - npm test
-        - name: Build
+  - name: Builf
+    task:
+      jobs:
+        - name: build css
           commands:
             - npm run css
       secrets:
