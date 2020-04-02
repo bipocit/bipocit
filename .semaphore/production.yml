@@ -7,9 +7,12 @@ blocks:
         - name: Deploy
           commands:
             - checkout
-            - npx now --token $ZEIT_TOKEN -n bipocit --prod
+            - npx now --token $ZEIT_TOKEN
       secrets:
         - name: now
+      prologue:
+        commands:
+          - sem-version node 10.13.0
 agent:
   machine:
     type: e1-standard-2
