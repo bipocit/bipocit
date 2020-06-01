@@ -12,21 +12,20 @@ const Navigation = ({ name }) => {
           {/* TODO: created a static folder in root to temporarily store logo */}
           <img src={"./logo.svg"} alt="logo"/>
         </Link>
-        {/* <Link to="/" className="font-semibold no-underline text-xl tracking-tight">{name}</Link> */}
       </div>
-      {/* <div className="flex items-center w-auto">
+      <div className="flex items-center w-auto">
         <div className="text-sm lg:text-md">
-          <Link to="/events" className="inline-block no-underline text-lg md:text-xl text-purple-200 hover:text-purple-300 mr-4 transition-colors duration-150 ease-in-out">
-            Events
-          </Link>
-          <Link to="/about" className="inline-block no-underline text-lg md: text-xl text-purple-200 hover:text-purple-300 mr-4 transition-colors duration-150 ease-in-out">
+          <Link to="/about" className="inline-block no-underline text-lg md:text-xl text-darkPurple font-semibold hover:text-purple-300 mr-4 transition-colors duration-150 ease-in-out">
             About
+          </Link>
+          <Link to="/events" className="inline-block no-underline text-lg md:text-xl text-darkPurple font-semibold hover:text-purple-300 mr-4 transition-colors duration-150 ease-in-out">
+            Events
           </Link>
         </div>
         <div>
           <DonateButton/>
         </div>
-      </div> */}
+      </div>
     </nav>
   )
 }
