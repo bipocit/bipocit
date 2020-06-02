@@ -13,7 +13,7 @@ const Navigation = ({ name }) => {
           <img src={"./logo.svg"} alt="logo"/>
         </Link>
       </div>
-      <div className="flex items-center w-auto">
+      <div className="flex items-center w-auto mt-4 flex-row-reverse sm:mt-0 sm:flex-row">
         <div className="text-sm lg:text-md">
           <Link to="/about" className="inline-block no-underline text-lg md:text-xl text-darkPurple font-semibold hover:text-purple-300 mr-4 transition-colors duration-150 ease-in-out">
             About
@@ -22,7 +22,7 @@ const Navigation = ({ name }) => {
             Events
           </Link>
         </div>
-        <div>
+        <div className="mr-4 sm:mr-0">
           <DonateButton/>
         </div>
       </div>
