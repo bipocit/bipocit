@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import DonateButton from "../components/donate-button";
 
 const Navigation = ({ name }) => {
-  console.log('<3');
   return (
     <nav className="flex items-center justify-between flex-wrap p-4 md:p-6 md:pl-20 md:pt-10">
       <div className="flex items-center">
