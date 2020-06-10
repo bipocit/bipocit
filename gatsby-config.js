@@ -51,5 +51,12 @@ module.exports = {
     `gatsby-plugin-csp`,
     // the above includes the basic policy. read more here: https://www.gatsbyjs.org/packages/gatsby-plugin-csp/
     // if you want to customize the security policy
+    `gatsby-plugin-no-javascript`,
+    {
+      resolve: `gatsby-plugin-no-javascript-utils`,
+      options: {
+        removeGatsbyAnnouncer: false,
+      },
+    },
   ],
 }
