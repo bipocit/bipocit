@@ -9,8 +9,7 @@ const Navigation = ({ name }) => {
     <nav className="flex items-center justify-between flex-wrap p-4 md:p-6 md:pl-20 md:pt-10">
       <div className="flex items-center">
         <Link to="/" className="font-semibold no-underline text-xl tracking-tight">
-          {/* TODO: created a static folder in root to temporarily store logo */}
-          <img src={"./logo.svg"} alt="logo"/>
+          <img src="./logo.svg" alt="logo"/>
         </Link>
       </div>
       <div className="flex items-center w-auto mt-4 flex-row-reverse sm:mt-0 sm:flex-row">
