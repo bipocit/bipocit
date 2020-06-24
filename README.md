@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="BIPOCIT" src="https://pbs.twimg.com/profile_images/1142039420385804288/VCvGV_QC_400x400.jpg" width="60" />
+    <img alt="BIPOCIT" src="https://bipocit.space/logo.svg" />
 </p>
 <h1 align="center">
   BIPOCIT ✨💻
